@@ -1,3 +1,8 @@
+<!-- 
+  *TODO
+  *add a button on each card to remove 
+  *add a checkbox to tick if read
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +10,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects and Prototype</title>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css_reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <h1>Joel Library</h1>
+      <button id="hideshow">
+        New Book<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-plus-circle"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="16"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+        </svg>
+      </button>
+      <form close class="hiddenform">
+        <input type="text" id="title" placeholder="title" />
+        <input type="text" id="author" placeholder="author" />
+        <input
+          type="number"
+          id="pages"
+          placeholder="pages"
+          min="0"
+          max="2000"
+          style="width: 100%"
+        />
+        <div>
+          <label for="read">Read</label>
+          <input type="checkbox" id="read" />
+        </div>
+
+        <input type="submit" value="submit" />
+      </form>
+    </nav>
+    <header>The Library</header>
+
+    <main></main>
+
+    <footer>
+      <h1>All Rights Reserved to &#64;EyoelSeleshiZeyohannes</h1>
+    </footer>
+  </body>
 </html>
